@@ -93,38 +93,68 @@
     <a href="https://calendly.com/louis_bizdev/30-minute-meeting-clone" target="_blank">Réserver un appel</a>
   </header>
 
-  <div style="background-color: #fff; padding: 20px 0; overflow: hidden;">
-  <div style="
-    display: flex;
-    animation: scroll 60s linear infinite;
-    gap: 50px;
-    width: fit-content;
-    animation-delay: 2s;
-  ">
-    <img src="Adidas.svg" alt="Adidas" height="40">
-    <img src="BNP.svg" alt="BNP" height="40">
-    <img src="BPCE.png" alt="BPCE" height="40">
-    <img src="Botanic.jpg" alt="Botanic" height="40">
-    <img src="Darty.svg" alt="Darty" height="40">
-    <img src="Disney.svg" alt="Disney" height="40">
-    <img src="GE.svg" alt="GE" height="40">
-    <img src="Leclerc.svg" alt="Leclerc" height="40">
-    <img src="Lego.svg" alt="Lego" height="40">
-    <img src="Macif.svg" alt="Macif" height="40">
-    <img src="Michelin.svg" alt="Michelin" height="40">
-    <img src="Mr Bricolage.png" alt="Mr Bricolage" height="40">
-    <img src="Parc Astérix.png" alt="Parc Astérix" height="40">
-    <img src="Pierre&Vacances.svg" alt="Pierre & Vacances" height="40">
-    <img src="Rothschild.svg" alt="Rothschild" height="40">
-    <img src="SG.svg" alt="SG" height="40">
-    <img src="Saint-Gobain.svg" alt="Saint-Gobain" height="40">
+<div style="background-color: #fff; padding: 20px 0; overflow: hidden;">
+  <div class="slider-track">
+    <div class="logo-slider">
+      <!-- Les logos sont en double pour un défilement fluide -->
+      <img src="Adidas.svg" alt="Adidas" height="40">
+      <img src="BNP.svg" alt="BNP" height="40">
+      <img src="BPCE.png" alt="BPCE" height="40">
+      <img src="Botanic.jpg" alt="Botanic" height="40">
+      <img src="Darty.svg" alt="Darty" height="40">
+      <img src="Disney.svg" alt="Disney" height="40">
+      <img src="GE.svg" alt="GE" height="40">
+      <img src="Leclerc.svg" alt="Leclerc" height="40">
+      <img src="Lego.svg" alt="Lego" height="40">
+      <img src="Macif.svg" alt="Macif" height="40">
+      <img src="Michelin.svg" alt="Michelin" height="40">
+      <img src="Mr Bricolage.png" alt="Mr Bricolage" height="40">
+      <img src="Parc Astérix.png" alt="Parc Astérix" height="40">
+      <img src="Pierre&Vacances.svg" alt="Pierre & Vacances" height="40">
+      <img src="Rothschild.svg" alt="Rothschild" height="40">
+      <img src="SG.svg" alt="SG" height="40">
+      <img src="Saint-Gobain.svg" alt="Saint-Gobain" height="40">
+
+      <!-- Doublé pour boucle continue -->
+      <img src="Adidas.svg" alt="Adidas" height="40">
+      <img src="BNP.svg" alt="BNP" height="40">
+      <img src="BPCE.png" alt="BPCE" height="40">
+      <img src="Botanic.jpg" alt="Botanic" height="40">
+      <img src="Darty.svg" alt="Darty" height="40">
+      <img src="Disney.svg" alt="Disney" height="40">
+      <img src="GE.svg" alt="GE" height="40">
+      <img src="Leclerc.svg" alt="Leclerc" height="40">
+      <img src="Lego.svg" alt="Lego" height="40">
+      <img src="Macif.svg" alt="Macif" height="40">
+      <img src="Michelin.svg" alt="Michelin" height="40">
+      <img src="Mr Bricolage.png" alt="Mr Bricolage" height="40">
+      <img src="Parc Astérix.png" alt="Parc Astérix" height="40">
+      <img src="Pierre&Vacances.svg" alt="Pierre & Vacances" height="40">
+      <img src="Rothschild.svg" alt="Rothschild" height="40">
+      <img src="SG.svg" alt="SG" height="40">
+      <img src="Saint-Gobain.svg" alt="Saint-Gobain" height="40">
+    </div>
   </div>
 </div>
 
 <style>
+.slider-track {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.logo-slider {
+  display: flex;
+  gap: 50px;
+  animation: scroll 60s linear infinite;
+  animation-delay: 2s;
+}
+
 @keyframes scroll {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 </style>
 
